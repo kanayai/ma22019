@@ -23,6 +23,8 @@ website:
         menu:
           - text: "VS Code Setup"
             href: computing-vscode.qmd
+          - text: "Terminal Basics"
+            href: computing-terminal.qmd
           - text: "Git & GitHub Guide"
             href: computing-git.qmd
           - text: "Assignment Workflow"

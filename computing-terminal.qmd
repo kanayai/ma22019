@@ -1,0 +1,351 @@
+---
+title: "Terminal Basics"
+---
+
+## What is the Terminal?
+
+The **terminal** (also called command line, console, or shell) is a text-based way to interact with your computer. Instead of clicking buttons, you type commands.
+
+::: {.callout-note}
+## Why Learn the Terminal?
+Many data science tools (Git, Quarto, Python packages) work best from the terminal. It's also much faster once you learn it!
+:::
+
+---
+
+## Accessing the Terminal in VS Code
+
+VS Code has a built-in terminal, so you don't need to use a separate application.
+
+### Opening the Terminal
+
+| Method | How |
+|--------|-----|
+| Keyboard shortcut | Press `` Ctrl+` `` (backtick key, usually below Escape) |
+| Menu | **View → Terminal** |
+| Command Palette | `Cmd+Shift+P` → type "Terminal: Create New Terminal" |
+
+### Terminal Location
+
+The terminal appears at the bottom of VS Code:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│                    Your Code Editor                         │
+│                                                             │
+├─────────────────────────────────────────────────────────────┤
+│ TERMINAL                                            + ▼ × │
+│ username@computer project-folder %  █                       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Mac vs Windows: What Shell Do I Have?
+
+| Operating System | Default Shell | Prompt Looks Like |
+|------------------|---------------|-------------------|
+| **Mac** | zsh | `username@computer folder %` |
+| **Windows** | PowerShell | `PS C:\Users\name\folder>` |
+
+::: {.callout-tip}
+## Don't Worry!
+Most commands in this course work the same on both Mac and Windows. We'll note any differences.
+:::
+
+---
+
+## Understanding the Prompt
+
+The prompt tells you where you are:
+
+**Mac Example:**
+```
+kai@macbook ma22019 % 
+```
+- `kai` = your username
+- `macbook` = computer name
+- `ma22019` = current folder
+- `%` = ready for input
+
+**Windows Example:**
+```
+PS C:\Users\kai\Projects\ma22019>
+```
+- `PS` = PowerShell
+- `C:\Users\kai\Projects\ma22019` = full path to current folder
+- `>` = ready for input
+
+---
+
+## Essential Commands
+
+### Navigating Folders
+
+| Action | Mac/Linux | Windows | Example |
+|--------|-----------|---------|---------|
+| See current folder | `pwd` | `pwd` or `cd` | `pwd` → `/Users/kai/projects` |
+| List files | `ls` | `dir` or `ls` | `ls` → shows all files |
+| Go into folder | `cd folder` | `cd folder` | `cd labs` |
+| Go up one level | `cd ..` | `cd ..` | `cd ..` → parent folder |
+| Go to home | `cd ~` | `cd ~` | `cd ~` → home directory |
+
+**Try it now:**
+```bash
+# See where you are
+pwd
+
+# List what's here
+ls
+
+# Go into a folder
+cd labs
+
+# Go back up
+cd ..
+```
+
+### Creating and Deleting
+
+| Action | Mac/Linux | Windows |
+|--------|-----------|---------|
+| Create folder | `mkdir name` | `mkdir name` |
+| Create file | `touch file.txt` | `New-Item file.txt` |
+| Delete file | `rm file.txt` | `Remove-Item file.txt` |
+| Delete folder | `rm -r folder` | `Remove-Item folder -Recurse` |
+
+::: {.callout-warning}
+## Be Careful with Delete!
+The terminal doesn't have a recycle bin. Deleted files are gone forever.
+:::
+
+---
+
+## Commands You'll Use in This Course
+
+### Quarto Commands
+
+| Command | What It Does |
+|---------|--------------|
+| `quarto preview` | Start a live preview of your document |
+| `quarto render` | Build the final HTML/PDF output |
+| `quarto render file.qmd` | Render a specific file |
+| `quarto check` | Check your Quarto installation |
+
+**Example workflow:**
+```bash
+# Start working on your assignment
+cd lab-01
+
+# Preview your work (opens in browser, auto-updates)
+quarto preview
+
+# When finished, render the final version
+quarto render
+```
+
+### Git Commands
+
+| Command | What It Does |
+|---------|--------------|
+| `git status` | See what files have changed |
+| `git add .` | Stage all changes |
+| `git commit -m "message"` | Save changes with a message |
+| `git push` | Upload to GitHub |
+| `git pull` | Download latest from GitHub |
+| `git clone url` | Copy a repository |
+
+**Example workflow:**
+```bash
+# Check what's changed
+git status
+
+# Stage everything
+git add .
+
+# Commit with a message
+git commit -m "Complete Question 1"
+
+# Push to GitHub
+git push
+```
+
+### Python Commands
+
+| Command | What It Does |
+|---------|--------------|
+| `python script.py` | Run a Python script |
+| `python --version` | Check Python version |
+| `pip install package` | Install a Python package |
+| `pip list` | See installed packages |
+
+**Note:** On Mac, you might need to use `python3` instead of `python`.
+
+### R Commands
+
+| Command | What It Does |
+|---------|--------------|
+| `R` | Start R in terminal |
+| `Rscript file.R` | Run an R script |
+| `R --version` | Check R version |
+
+---
+
+## Helpful Tips
+
+### Tab Completion
+
+Press **Tab** to auto-complete file and folder names:
+
+```bash
+cd Docu[Tab]    →    cd Documents/
+```
+
+This saves typing and prevents typos!
+
+### Command History
+
+| Action | Key |
+|--------|-----|
+| Previous command | `↑` (up arrow) |
+| Next command | `↓` (down arrow) |
+| Search history | `Ctrl+R` |
+
+### Clear the Screen
+
+| Mac/Linux | Windows |
+|-----------|---------|
+| `clear` or `Cmd+K` | `cls` or `Clear-Host` |
+
+### Stop a Running Command
+
+If something is running and you want to stop it:
+
+Press **`Ctrl+C`**
+
+---
+
+## Common Scenarios
+
+### "I'm lost, where am I?"
+
+```bash
+# See current folder
+pwd
+
+# See what's in this folder
+ls
+```
+
+### "I need to go to my project folder"
+
+```bash
+# Go to home first
+cd ~
+
+# Then navigate to your project
+cd Projects/ma22019/lab-01
+```
+
+### "I want to preview my Quarto document"
+
+```bash
+# Make sure you're in the right folder
+cd lab-01
+
+# Start preview
+quarto preview
+```
+
+### "I need to submit my assignment"
+
+```bash
+# Check what's changed
+git status
+
+# Add all files
+git add .
+
+# Commit with a message
+git commit -m "Complete lab 01"
+
+# Push to GitHub
+git push
+```
+
+---
+
+## Multiple Terminals
+
+You can have multiple terminals open at once in VS Code:
+
+- Click the **+** button in the terminal panel
+- Click the dropdown to switch between them
+- Right-click a terminal tab to rename it
+
+This is useful when you want:
+- One terminal for `quarto preview` (running continuously)
+- Another for Git commands
+
+---
+
+## Troubleshooting
+
+### "Command not found"
+
+This means the program isn't installed or isn't in your PATH.
+
+| Command | Solution |
+|---------|----------|
+| `quarto: command not found` | Install Quarto from [quarto.org](https://quarto.org) |
+| `python: command not found` | Install Python or use `python3` |
+| `git: command not found` | Install Git from [git-scm.com](https://git-scm.com) |
+
+### "Permission denied"
+
+You might need to:
+1. Check you're in the right folder
+2. Make sure the file isn't open elsewhere
+3. On Mac, you may need to use `sudo` (admin permissions)
+
+### "I typed something wrong"
+
+- Press `Ctrl+C` to cancel
+- Press `↑` to get the last command and edit it
+- Start fresh!
+
+---
+
+## Quick Reference Card
+
+### Navigation
+```bash
+pwd                  # Where am I?
+ls                   # What's here?
+cd folder            # Go into folder
+cd ..                # Go up one level
+cd ~                 # Go home
+```
+
+### Quarto
+```bash
+quarto preview       # Live preview
+quarto render        # Build output
+```
+
+### Git
+```bash
+git status           # What's changed?
+git add .            # Stage all
+git commit -m "msg"  # Commit
+git push             # Upload
+git pull             # Download
+```
+
+### General
+```bash
+Ctrl+C               # Stop command
+Tab                  # Auto-complete
+↑ / ↓                # Command history
+clear                # Clear screen
+```
