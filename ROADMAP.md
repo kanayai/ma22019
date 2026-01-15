@@ -1,19 +1,18 @@
 # MA22019 Course Website - Roadmap
 
-This file tracks future plans and is synced via Git.
+This file tracks future plans and is synced via Git for multi-Mac workflow.
 
 ## ✅ Completed
 - [x] Initial site structure with 9-week schedule
 - [x] Bath University branding (colors, styling)
 - [x] All main pages (syllabus, overview, team, support, links)
-- [x] Git & GitHub visual guide for students
-- [x] Assignment workflow documentation
-- [x] GitHub repository created and pushed
-- [x] GitHub Actions workflow for deployment
+- [x] Computing guides:
+  - [x] VS Code Setup (extensions for Python/R/Quarto)
+  - [x] Terminal Basics (Mac/Linux/Windows)
+  - [x] Git & GitHub visual guide
+  - [x] Assignment Workflow (3-commit policy)
+- [x] GitHub repository and Actions workflow
 - [x] Comprehensive README and .gitignore
-
-## 🔄 In Progress
-- [ ] Enable GitHub Pages deployment
 
 ## 📋 Next Steps
 
@@ -25,35 +24,26 @@ This file tracks future plans and is synced via Git.
 - [ ] Add instructor info to `course-team.qmd`
 - [ ] Set actual dates in schedule and syllabus
 - [ ] Create Week 1 lecture content
-- [ ] Create Week 1 lab exercises
-- [ ] Create Week 1 problem sheet
+- [ ] Create Week 1-9 labs and problem sheets
 
-### GitHub Classroom (Student Submissions)
+### GitHub Classroom
 - [ ] Create GitHub Organization: `github.com/ma22019`
-- [ ] Set up GitHub Classroom (https://classroom.github.com/)
+- [ ] Set up GitHub Classroom
 - [ ] Create template repos for assignments
-- [ ] Generate assignment invite links
-
-### Enhancements
-- [ ] Replace placeholder logo with official Bath logo
-- [ ] Add RevealJS slide templates
-- [ ] Add exam review pages
-- [ ] Add project milestones
 
 ---
 
-## Quick Reference
+## Multi-Mac Workflow
 
 ```bash
-# Local preview
-quarto preview
-
-# Build site
-quarto render
-
-# Sync changes
-git add . && git commit -m "message" && git push
-
 # On new machine
 git clone https://github.com/kanayai/ma22019.git
+cd ma22019
+quarto preview
+
+# Before switching machines
+git add . && git commit -m "message" && git push
+
+# On other machine
+cd ma22019 && git pull
 ```

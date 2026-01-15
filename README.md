@@ -53,27 +53,47 @@ Course website for **MA22019 - Introduction to Data Science** at the University 
 ├── course-links.qmd         # Useful links and references
 ├── styles.scss              # Custom styling (Bath branding)
 │
+├── computing-vscode.qmd     # VS Code setup guide
+├── computing-terminal.qmd   # Terminal basics (Mac/Linux/Windows)
+├── computing-git.qmd        # Git & GitHub visual guide
+├── computing-assignments.qmd # Assignment workflow + 3-commit policy
+│
 ├── lectures/                # Lecture materials
-│   ├── week-01-lec-01.qmd   # Week 1, Lecture 1
-│   └── week-01-lec-02.qmd   # Week 1, Lecture 2
+│   ├── week-01-lec-01.qmd
+│   └── week-01-lec-02.qmd
 │
 ├── labs/                    # Lab exercises
-│   └── lab-01.qmd           # Lab 1
+│   └── lab-01.qmd
 │
 ├── problem-sheets/          # Weekly problem sets
-│   └── ps-01.qmd            # Problem Sheet 1
+│   └── ps-01.qmd
 │
 ├── problem-classes/         # Problem class materials
-│   └── pc-01.qmd            # Problem Class 1
+│   └── pc-01.qmd
 │
 ├── images/                  # Images and logos
-│   └── bath-logo.svg        # University of Bath logo
+│   └── bath-logo.svg
 │
 ├── .github/workflows/       # CI/CD
-│   └── publish.yml          # GitHub Actions workflow
+│   └── publish.yml
 │
-└── docs/                    # Built website (generated)
+├── ROADMAP.md               # Future plans (tracked for multi-Mac sync)
+│
+└── docs/                    # Built website (generated, gitignored)
 ```
+
+---
+
+## 💻 Computing Guides
+
+The site includes comprehensive guides for students:
+
+| Guide | Content |
+|-------|---------|
+| **VS Code Setup** | Installation, extensions (Python/R/Quarto), shortcuts |
+| **Terminal Basics** | Mac, Linux, and Windows command line |
+| **Git & GitHub** | Visual intro to version control |
+| **Assignment Workflow** | GitHub submission + 3-commit grading policy |
 
 ---
 
