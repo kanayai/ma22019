@@ -19,6 +19,12 @@ website:
         href: course-syllabus.qmd
       - text: "Overview"
         href: course-overview.qmd
+      - text: "Computing"
+        menu:
+          - text: "Git & GitHub Guide"
+            href: computing-git.qmd
+          - text: "Assignment Workflow"
+            href: computing-assignments.qmd
       - text: "Team"
         href: course-team.qmd
       - text: "Support"
@@ -27,7 +33,7 @@ website:
         href: course-links.qmd
     right:
       - icon: github
-        href: https://github.com/ma22019
+        href: https://github.com/kanayai/ma22019
         aria-label: GitHub
 
   sidebar: false

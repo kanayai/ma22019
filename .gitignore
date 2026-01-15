@@ -170,3 +170,6 @@ TODO.md
 NOTES.md
 scratch/
 temp/
+
+/.quarto/
+**/*.quarto_ipynb

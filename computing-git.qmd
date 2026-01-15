@@ -1,0 +1,307 @@
+---
+title: "Git and GitHub Guide"
+---
+
+## What is Git and GitHub?
+
+::: {.callout-note}
+## The Key Difference
+- **Git** = A tool that tracks changes to your files (like "Track Changes" in Word, but much more powerful)
+- **GitHub** = A website that stores your Git projects online and enables collaboration
+:::
+
+```{mermaid}
+flowchart LR
+    subgraph Your Computer
+        A[📁 Your Files]
+        B[📦 Git Repository]
+    end
+    
+    subgraph Internet
+        C[☁️ GitHub]
+    end
+    
+    A -->|git add| B
+    B -->|git push| C
+    C -->|git pull| B
+    
+    style A fill:#EC0836,color:#fff
+    style B fill:#14C8E1,color:#000
+    style C fill:#202329,color:#fff
+```
+
+---
+
+## Why Use Git and GitHub?
+
+| Without Git | With Git |
+|-------------|----------|
+| `report_v1.docx` | Single file with complete history |
+| `report_v2_final.docx` | You can go back to any previous version |
+| `report_v2_final_ACTUALLY_FINAL.docx` | See exactly what changed and when |
+| `report_v3_supervisor_comments.docx` | Multiple people can work together |
+| 😱 Which one is the latest?! | 😊 Always know the current state |
+
+### Benefits for Data Science
+
+- **Reproducibility**: Track exactly how your analysis evolved
+- **Collaboration**: Work with teammates without overwriting each other's work
+- **Backup**: Your work is safely stored on GitHub
+- **Portfolio**: Showcase your projects to future employers
+
+---
+
+## The Four Essential Commands
+
+Think of Git like sending a package in the mail:
+
+```{mermaid}
+flowchart LR
+    A[1️⃣ Make Changes] --> B[2️⃣ Stage<br>git add]
+    B --> C[3️⃣ Commit<br>git commit]
+    C --> D[4️⃣ Push<br>git push]
+    
+    style A fill:#EC0836,color:#fff
+    style B fill:#673AB7,color:#fff
+    style C fill:#14C8E1,color:#000
+    style D fill:#202329,color:#fff
+```
+
+### 1️⃣ Make Changes
+Edit your files as normal in RStudio, VS Code, or any editor.
+
+### 2️⃣ Stage (`git add`)
+Select which changes you want to save. Like putting items in a box.
+
+```bash
+git add filename.qmd    # Add specific file
+git add .               # Add all changed files
+```
+
+### 3️⃣ Commit (`git commit`)
+Save a snapshot of your changes with a message. Like sealing the box with a label.
+
+```bash
+git commit -m "Add data visualization for Question 1"
+```
+
+::: {.callout-tip}
+## Write Good Commit Messages
+- ❌ "stuff"
+- ❌ "changes"  
+- ❌ "fixed it"
+- ✅ "Add bar chart showing population by county"
+- ✅ "Fix error in linear regression model"
+- ✅ "Complete Question 3 analysis"
+:::
+
+### 4️⃣ Push (`git push`)
+Upload your commits to GitHub. Like posting the package.
+
+```bash
+git push
+```
+
+---
+
+## Typical Workflow
+
+Here's what you'll do for each assignment:
+
+```{mermaid}
+flowchart TD
+    A[📩 Accept assignment link] --> B[📋 Clone repository]
+    B --> C[✏️ Work on your code]
+    C --> D[💾 Save files]
+    D --> E{More work<br>to do?}
+    E -->|Yes| F[📦 git add & commit]
+    F --> C
+    E -->|No| G[📦 Final git add & commit]
+    G --> H[🚀 git push]
+    H --> I[✅ Submission complete!]
+    
+    style A fill:#EC0836,color:#fff
+    style H fill:#202329,color:#fff
+    style I fill:#64FFDA,color:#000
+```
+
+### Step-by-Step
+
+1. **Accept the assignment** by clicking the link provided
+2. **Clone the repository** to your computer:
+   ```bash
+   git clone <repository-url>
+   ```
+3. **Open the project** in RStudio or VS Code
+4. **Work on your assignment** - edit the `.qmd` files
+5. **Commit regularly** (at least 3 times per assignment):
+   ```bash
+   git add .
+   git commit -m "Complete Question 1"
+   ```
+6. **Push when done** (or periodically as backup):
+   ```bash
+   git push
+   ```
+
+---
+
+## Getting Started: One-Time Setup
+
+### 1. Create a GitHub Account
+
+1. Go to [github.com](https://github.com) and click **Sign up**
+2. Choose a professional username (you'll use this for years!)
+   - ✅ `jane-smith` or `jsmith22`
+   - ❌ `xXx_CodeNinja_xXx`
+3. Use your university email for free student benefits
+
+### 2. Configure Git
+
+Tell Git who you are (run these once):
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@bath.ac.uk"
+```
+
+### 3. Set Up Authentication
+
+You need to authenticate with GitHub. The easiest method:
+
+**Option A: GitHub CLI (Recommended)**
+```bash
+gh auth login
+```
+
+**Option B: SSH Key**
+See [GitHub's SSH guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+---
+
+## Using Git in VS Code
+
+VS Code has excellent built-in Git support:
+
+### The Source Control Panel
+
+1. Click the **Source Control** icon in the left sidebar (or press `Ctrl+Shift+G`)
+2. You'll see all your changed files listed
+
+### Stage, Commit, Push
+
+1. **Stage**: Click the `+` next to files you want to commit
+2. **Commit**: Type a message in the box and click the ✓ checkmark
+3. **Push**: Click `...` menu → **Push** (or use the sync button)
+
+### Visual Indicators
+
+| Icon | Meaning |
+|------|---------|
+| 🟢 `U` | Untracked (new file) |
+| 🟡 `M` | Modified |
+| 🔴 `D` | Deleted |
+| 🟢 `A` | Added (staged) |
+
+---
+
+## Using Git in RStudio
+
+RStudio also has built-in Git support:
+
+### The Git Pane
+
+Look for the "Git" tab in the top-right panel area.
+
+### Stage, Commit, Push
+
+1. **Stage**: Check the boxes next to files you want to commit
+2. **Commit**: Click "Commit" button, write a message, click "Commit"
+3. **Push**: Click the green "Push" arrow
+
+---
+
+## Common Issues and Solutions
+
+### "I made changes but Git doesn't see them"
+
+Make sure you've **saved your files** first! Git only tracks saved changes.
+
+### "Permission denied" when pushing
+
+Your authentication may have expired. Try:
+```bash
+gh auth login
+```
+
+### "Merge conflict"
+
+This happens when the same line was changed in two places. Look for markers like:
+```
+<<<<<<< HEAD
+Your changes
+=======
+Their changes
+>>>>>>> branch-name
+```
+
+Delete the markers and keep the code you want, then commit.
+
+### "I want to undo my last commit"
+
+```bash
+git reset --soft HEAD~1
+```
+This undoes the commit but keeps your changes.
+
+### "Help! I broke everything!"
+
+Don't panic! Git keeps a complete history. Ask for help in office hours or post on the forum with:
+- What you were trying to do
+- The error message you see
+- The output of `git status`
+
+---
+
+## Quick Reference Card
+
+| Action | Command |
+|--------|---------|
+| Check status | `git status` |
+| See recent history | `git log --oneline -5` |
+| Stage all files | `git add .` |
+| Stage one file | `git add filename` |
+| Commit | `git commit -m "message"` |
+| Push to GitHub | `git push` |
+| Pull from GitHub | `git pull` |
+| Clone a repository | `git clone <url>` |
+
+---
+
+## Assignment Submission Workflow
+
+::: {.callout-important}
+## Your Submission = Your GitHub Repository
+
+When you push to GitHub, your work is submitted. Make sure to:
+1. Commit with meaningful messages
+2. Push before the deadline
+3. Check that your files appear on GitHub
+:::
+
+### Checklist Before Deadline
+
+- [ ] All `.qmd` files are saved
+- [ ] Code runs without errors
+- [ ] All work is committed (`git status` shows "nothing to commit")
+- [ ] All work is pushed (`git push` shows "Everything up-to-date")
+- [ ] You've verified on GitHub that your files are there
+
+---
+
+## Further Resources
+
+- [Happy Git with R](https://happygitwithr.com/) - Comprehensive guide for R users
+- [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) - PDF quick reference
+- [GitHub Skills](https://skills.github.com/) - Interactive tutorials
+- [Oh Shit, Git!?!](https://ohshitgit.com/) - Solutions to common mistakes
