@@ -113,12 +113,44 @@ assignment-name/
 
 ## What Gets Graded?
 
+### Content (80%)
+
 | What We Look At | Why It Matters |
 |-----------------|----------------|
 | Your `.qmd` file | Your code and written answers |
 | Rendered output | Does your code run correctly? |
-| Commit history | Shows progression of work |
-| GitHub repository | Is everything properly pushed? |
+| Accuracy | Are your answers correct? |
+| Completeness | Did you attempt all questions? |
+
+### Workflow Points (20%)
+
+::: {.callout-important}
+## The 3-Commit Rule
+You **must commit at least 3 times** as you work through each assignment. This is a graded requirement!
+:::
+
+We grade your Git workflow to ensure you're developing good habits:
+
+| Requirement | Points | What We Check |
+|-------------|--------|---------------|
+| **Minimum 3 commits** | 10% | We look at your commit history |
+| **Final files in repo** | 5% | Both `.qmd` and rendered output on GitHub |
+| **Organization** | 5% | Clean repo, meaningful commit messages |
+
+**Why do we require multiple commits?**
+
+1. **Proves progression**: Shows you worked incrementally, not all at once
+2. **Enables recovery**: If something breaks, you have earlier working versions
+3. **Mirrors industry**: Professional developers commit frequently
+4. **Protects you**: We can give partial credit if your final version has issues
+
+**Good vs. Bad commit practices:**
+
+| ❌ Bad | ✅ Good |
+|--------|---------|
+| 1 giant commit at the deadline | Commits after each question |
+| "done" as commit message | "Complete Q1: data cleaning and summary stats" |
+| Only `.qmd` file pushed | Both `.qmd` and `.html`/`.pdf` pushed |
 
 ---
 
