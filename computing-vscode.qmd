@@ -1,0 +1,341 @@
+---
+title: "VS Code Setup Guide"
+---
+
+## What is VS Code?
+
+**Visual Studio Code (VS Code)** is a free, powerful code editor that works with almost any programming language. It's like a supercharged text editor with built-in support for:
+
+- 🐍 Python
+- 📊 R  
+- 📄 Quarto/Markdown
+- 🔧 Git version control
+- And much more!
+
+::: {.callout-tip}
+## Why VS Code?
+VS Code is industry-standard and used by millions of developers. Learning it now will serve you well beyond this course!
+:::
+
+---
+
+## Installation
+
+### Step 1: Download VS Code
+
+1. Go to [code.visualstudio.com](https://code.visualstudio.com/)
+2. Click the big download button (it auto-detects your operating system)
+3. Run the installer
+
+### Step 2: Install Essential Extensions
+
+Extensions add features to VS Code. Click the **Extensions** icon in the left sidebar (or press `Cmd+Shift+X` on Mac / `Ctrl+Shift+X` on Windows) and install these:
+
+| Extension | Purpose |
+|-----------|---------|
+| **Python** | Python language support |
+| **Quarto** | Quarto document support |
+| **R** | R language support |
+| **Jupyter** | Jupyter notebook support |
+| **GitLens** | Enhanced Git features |
+
+::: {.callout-note}
+## Quick Install
+You can also install extensions from the command line:
+```bash
+code --install-extension ms-python.python
+code --install-extension quarto.quarto
+code --install-extension rdebugger.r-debugger
+```
+:::
+
+---
+
+## The VS Code Interface
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  File  Edit  View  ...                              ─ □ ✕      │
+├──────┬──────────────────────────────────────────────────────────┤
+│      │                                                          │
+│  A   │              EDITOR AREA                                 │
+│  C   │              (where you write code)                      │
+│  T   │                                                          │
+│  I   ├──────────────────────────────────────────────────────────┤
+│  V   │                                                          │
+│  I   │              TERMINAL / OUTPUT                           │
+│  T   │              (run commands here)                         │
+│  Y   │                                                          │
+│      │                                                          │
+│  B   │                                                          │
+│  A   │                                                          │
+│  R   │                                                          │
+└──────┴──────────────────────────────────────────────────────────┘
+```
+
+### The Activity Bar (Left Side)
+
+| Icon | Name | Purpose |
+|------|------|---------|
+| 📁 | Explorer | Browse files and folders |
+| 🔍 | Search | Find text across files |
+| 🔀 | Source Control | Git operations |
+| 🐛 | Run & Debug | Debug your code |
+| 🧩 | Extensions | Install add-ons |
+
+---
+
+## Opening a Project
+
+### Method 1: Open Folder
+1. Go to **File → Open Folder**
+2. Select your project folder
+3. Click **Open**
+
+### Method 2: From Terminal
+```bash
+# Navigate to your project
+cd path/to/your/project
+
+# Open in VS Code
+code .
+```
+
+### Method 3: Clone from GitHub
+1. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows)
+2. Type "Git: Clone"
+3. Paste the repository URL
+4. Choose where to save it
+
+---
+
+## Essential Keyboard Shortcuts
+
+Learn these shortcuts to work faster:
+
+### Navigation
+
+| Action | Mac | Windows |
+|--------|-----|---------|
+| Command Palette | `Cmd+Shift+P` | `Ctrl+Shift+P` |
+| Quick Open File | `Cmd+P` | `Ctrl+P` |
+| Toggle Sidebar | `Cmd+B` | `Ctrl+B` |
+| Toggle Terminal | `` Ctrl+` `` | `` Ctrl+` `` |
+| Go to Line | `Ctrl+G` | `Ctrl+G` |
+
+### Editing
+
+| Action | Mac | Windows |
+|--------|-----|---------|
+| Cut Line | `Cmd+X` | `Ctrl+X` |
+| Copy Line | `Cmd+C` | `Ctrl+C` |
+| Move Line Up/Down | `Option+↑/↓` | `Alt+↑/↓` |
+| Comment Line | `Cmd+/` | `Ctrl+/` |
+| Find | `Cmd+F` | `Ctrl+F` |
+| Find & Replace | `Cmd+H` | `Ctrl+H` |
+
+### Multi-cursor (Power Feature!)
+
+| Action | Mac | Windows |
+|--------|-----|---------|
+| Add cursor | `Option+Click` | `Alt+Click` |
+| Add cursor above/below | `Cmd+Option+↑/↓` | `Ctrl+Alt+↑/↓` |
+| Select all occurrences | `Cmd+Shift+L` | `Ctrl+Shift+L` |
+
+---
+
+## Working with Python
+
+### Setting Up Python
+
+1. Install the **Python extension** (see above)
+2. Open a `.py` file or create one
+3. VS Code will ask you to select a Python interpreter
+4. Choose your installed Python version
+
+### Running Python Code
+
+**Option 1: Run File**
+- Click the ▶️ play button in the top-right
+- Or right-click and select "Run Python File in Terminal"
+
+**Option 2: Run Selection**
+- Select code
+- Press `Shift+Enter` to run just that selection
+
+**Option 3: Interactive Window**
+- Press `Shift+Enter` on any line to run in interactive mode
+- Great for exploring data!
+
+### Jupyter Notebooks in VS Code
+
+1. Create a file with `.ipynb` extension
+2. Or open an existing notebook
+3. Click **+ Code** or **+ Markdown** to add cells
+4. Press `Shift+Enter` to run a cell
+
+---
+
+## Working with R
+
+### Setting Up R
+
+1. Install R from [cran.r-project.org](https://cran.r-project.org/)
+2. Install the **R extension** in VS Code
+3. Install the `languageserver` package in R:
+   ```r
+   install.packages("languageserver")
+   ```
+
+### Running R Code
+
+- Select code and press `Cmd+Enter` (Mac) or `Ctrl+Enter` (Windows)
+- The R terminal will open automatically
+
+---
+
+## Working with Quarto
+
+### Setting Up Quarto
+
+1. Install Quarto from [quarto.org](https://quarto.org/docs/get-started/)
+2. Install the **Quarto extension** in VS Code
+
+### Creating Quarto Documents
+
+1. Create a file with `.qmd` extension
+2. Add YAML front matter:
+   ```yaml
+   ---
+   title: "My Analysis"
+   format: html
+   ---
+   ```
+3. Write markdown and code chunks
+
+### Previewing Quarto Documents
+
+- Press `Cmd+Shift+K` (Mac) or `Ctrl+Shift+K` (Windows)
+- Or click **Preview** in the top-right
+- Or run in terminal: `quarto preview document.qmd`
+
+---
+
+## The Integrated Terminal
+
+The terminal is built right into VS Code!
+
+### Opening the Terminal
+- Press `` Ctrl+` `` (backtick)
+- Or go to **View → Terminal**
+
+### Common Commands
+
+```bash
+# Navigate folders
+cd folder-name       # Go into folder
+cd ..                # Go up one level
+ls                   # List files (Mac/Linux)
+dir                  # List files (Windows)
+
+# Git commands
+git status           # See what's changed
+git add .            # Stage all changes
+git commit -m "msg"  # Commit with message
+git push             # Push to GitHub
+
+# Python
+python script.py     # Run a Python script
+pip install package  # Install a package
+
+# Quarto
+quarto preview       # Preview document
+quarto render        # Render to output
+```
+
+---
+
+## Settings & Customization
+
+### Accessing Settings
+- Press `Cmd+,` (Mac) or `Ctrl+,` (Windows)
+- Or go to **Code → Preferences → Settings**
+
+### Recommended Settings for Beginners
+
+Search for these in settings:
+
+| Setting | Recommended Value |
+|---------|-------------------|
+| Auto Save | `afterDelay` (saves automatically!) |
+| Font Size | `14` or larger |
+| Word Wrap | `on` |
+| Format On Save | `on` |
+
+### Themes
+Want a different look? Press `Cmd+K Cmd+T` to browse themes!
+
+---
+
+## Comparison: VS Code vs RStudio vs Jupyter
+
+| Feature | VS Code | RStudio | Jupyter |
+|---------|---------|---------|---------|
+| **Best for** | Multi-language, large projects | R-focused work | Interactive exploration |
+| **Python** | ✅ Excellent | ⚠️ Limited | ✅ Excellent |
+| **R** | ✅ Good | ✅ Excellent | ⚠️ Possible |
+| **Git** | ✅ Built-in | ✅ Built-in | ❌ External |
+| **Quarto** | ✅ Excellent | ✅ Excellent | ⚠️ Limited |
+| **Learning curve** | Medium | Low | Low |
+
+::: {.callout-note}
+## Which Should I Use?
+For this course, we recommend **VS Code** as your primary editor because:
+- It handles both R and Python equally well
+- It has the best Git integration
+- It's the most widely used in industry
+:::
+
+---
+
+## Troubleshooting
+
+### "Python not found"
+- Install Python from [python.org](https://www.python.org/)
+- In VS Code, press `Cmd+Shift+P` → "Python: Select Interpreter"
+
+### "R not found"
+- Install R from [cran.r-project.org](https://cran.r-project.org/)
+- Restart VS Code
+
+### "Quarto not found"
+- Install Quarto from [quarto.org](https://quarto.org/docs/get-started/)
+- Restart VS Code
+
+### Extensions not working
+1. Check the extension is enabled
+2. Restart VS Code
+3. Check the OUTPUT panel for errors
+
+---
+
+## Quick Start Checklist
+
+- [ ] Download and install VS Code
+- [ ] Install Python extension
+- [ ] Install Quarto extension
+- [ ] Install R extension (optional)
+- [ ] Configure auto-save
+- [ ] Learn the Command Palette (`Cmd+Shift+P`)
+- [ ] Practice opening folders and files
+- [ ] Try the integrated terminal
+
+---
+
+## Further Resources
+
+- [VS Code Documentation](https://code.visualstudio.com/docs)
+- [VS Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
+- [Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
+- [R in VS Code](https://code.visualstudio.com/docs/languages/r)
+- [Quarto in VS Code](https://quarto.org/docs/tools/vscode.html)

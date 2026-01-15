@@ -21,6 +21,8 @@ website:
         href: course-overview.qmd
       - text: "Computing"
         menu:
+          - text: "VS Code Setup"
+            href: computing-vscode.qmd
           - text: "Git & GitHub Guide"
             href: computing-git.qmd
           - text: "Assignment Workflow"
