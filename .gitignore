@@ -1,40 +1,172 @@
-# Quarto output
+# =============================================================================
+# Quarto
+# =============================================================================
+# Generated website output
 docs/
 _site/
 .quarto/
 
+# Quarto cache and freeze
+_freeze/
+
+# =============================================================================
 # R
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+# =============================================================================
+# RStudio project files
+.Rproj.user/
 *.Rproj
 
+# R session data
+.RData
+.Rhistory
+.Ruserdata
+
+# R package library
+renv/library/
+renv/staging/
+renv/cellar/
+
+# R environment lock file (uncomment to track)
+# renv.lock
+
+# Packrat
+packrat/lib*/
+.Rprofile
+
+# =============================================================================
 # Python
+# =============================================================================
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-.Python
 *.so
-.ipynb_checkpoints/
+
+# Virtual environments
+.Python
 venv/
 .venv/
+env/
+.env/
+ENV/
 
-# Environment
-.env
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
-# OS
-.DS_Store
-Thumbs.db
+# IPython
+profile_default/
+ipython_config.py
 
-# Editor
+# pyenv
+.python-version
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================================================================
+# Data Files (prevent accidental commits of large data)
+# =============================================================================
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.rds
+*.RData
+*.sav
+*.dta
+
+# Exception: keep example/sample data
+!data/examples/*.csv
+
+# =============================================================================
+# IDE and Editors
+# =============================================================================
+# VS Code
 .vscode/
+*.code-workspace
+
+# RStudio
+.Rproj.user/
+
+# JetBrains (PyCharm, etc.)
+.idea/
+
+# Vim
 *.swp
 *.swo
 *~
 
-# Freeze directory (optional - can include if you want reproducible builds)
-# _freeze/
+# Emacs
+*~
+\#*\#
+.#*
 
-/.quarto/
-**/*.quarto_ipynb
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================================
+# Operating System
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+
+# =============================================================================
+# Logs and Temporary Files
+# =============================================================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# =============================================================================
+# Secrets and Environment Variables
+# =============================================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.yml
+credentials.json
+
+# =============================================================================
+# Build and Package Artifacts
+# =============================================================================
+# Node.js (if using any JS tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Distribution
+dist/
+build/
+
+# =============================================================================
+# Misc
+# =============================================================================
+# Local notes
+TODO.md
+NOTES.md
+scratch/
+temp/
