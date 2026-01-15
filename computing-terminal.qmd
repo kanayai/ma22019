@@ -41,16 +41,17 @@ The terminal appears at the bottom of VS Code:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Mac vs Windows: What Shell Do I Have?
+### What Shell Do I Have?
 
 | Operating System | Default Shell | Prompt Looks Like |
 |------------------|---------------|-------------------|
 | **Mac** | zsh | `username@computer folder %` |
+| **Linux** | bash | `username@computer:~/folder$` |
 | **Windows** | PowerShell | `PS C:\Users\name\folder>` |
 
 ::: {.callout-tip}
-## Don't Worry!
-Most commands in this course work the same on both Mac and Windows. We'll note any differences.
+## Good News!
+Mac and Linux use nearly identical commands (they're both Unix-based). Windows PowerShell is slightly different, but we'll show both.
 :::
 
 ---
@@ -59,7 +60,7 @@ Most commands in this course work the same on both Mac and Windows. We'll note a
 
 The prompt tells you where you are:
 
-**Mac Example:**
+**Mac Example (zsh):**
 ```
 kai@macbook ma22019 % 
 ```
@@ -68,7 +69,15 @@ kai@macbook ma22019 %
 - `ma22019` = current folder
 - `%` = ready for input
 
-**Windows Example:**
+**Linux Example (bash):**
+```
+kai@ubuntu:~/Projects/ma22019$ 
+```
+- `kai@ubuntu` = username @ computer
+- `~/Projects/ma22019` = current path (`~` = home)
+- `$` = ready for input
+
+**Windows Example (PowerShell):**
 ```
 PS C:\Users\kai\Projects\ma22019>
 ```
@@ -179,7 +188,15 @@ git push
 | `pip install package` | Install a Python package |
 | `pip list` | See installed packages |
 
-**Note:** On Mac, you might need to use `python3` instead of `python`.
+::: {.callout-note}
+## Python Command Differences
+| OS | Python Command | Pip Command |
+|----|----------------|-------------|
+| **Windows** | `python` | `pip` |
+| **Mac/Linux** | `python3` | `pip3` |
+
+If `python` doesn't work on Mac/Linux, try `python3`.
+:::
 
 ### R Commands
 
@@ -213,9 +230,11 @@ This saves typing and prevents typos!
 
 ### Clear the Screen
 
-| Mac/Linux | Windows |
-|-----------|---------|
-| `clear` or `Cmd+K` | `cls` or `Clear-Host` |
+| OS | Command | Keyboard Shortcut |
+|----|---------|-------------------|
+| **Mac** | `clear` | `Cmd+K` |
+| **Linux** | `clear` | `Ctrl+L` |
+| **Windows** | `cls` or `Clear-Host` | — |
 
 ### Stop a Running Command
 
@@ -306,7 +325,8 @@ This means the program isn't installed or isn't in your PATH.
 You might need to:
 1. Check you're in the right folder
 2. Make sure the file isn't open elsewhere
-3. On Mac, you may need to use `sudo` (admin permissions)
+3. On Mac/Linux, you may need to use `sudo` (admin permissions)
+4. On Windows, run VS Code as Administrator
 
 ### "I typed something wrong"
 

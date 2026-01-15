@@ -161,10 +161,15 @@ code .
 
 Learn these shortcuts to work faster:
 
+::: {.callout-note}
+## Linux Users
+Linux shortcuts are the same as Windows — use `Ctrl` instead of `Cmd`.
+:::
+
 ### Navigation
 
-| Action | Mac | Windows |
-|--------|-----|---------|
+| Action | Mac | Windows/Linux |
+|--------|-----|---------------|
 | Command Palette | `Cmd+Shift+P` | `Ctrl+Shift+P` |
 | Quick Open File | `Cmd+P` | `Ctrl+P` |
 | Toggle Sidebar | `Cmd+B` | `Ctrl+B` |
@@ -173,8 +178,8 @@ Learn these shortcuts to work faster:
 
 ### Editing
 
-| Action | Mac | Windows |
-|--------|-----|---------|
+| Action | Mac | Windows/Linux |
+|--------|-----|---------------|
 | Cut Line | `Cmd+X` | `Ctrl+X` |
 | Copy Line | `Cmd+C` | `Ctrl+C` |
 | Move Line Up/Down | `Option+↑/↓` | `Alt+↑/↓` |
@@ -184,8 +189,8 @@ Learn these shortcuts to work faster:
 
 ### Multi-cursor (Power Feature!)
 
-| Action | Mac | Windows |
-|--------|-----|---------|
+| Action | Mac | Windows/Linux |
+|--------|-----|---------------|
 | Add cursor | `Option+Click` | `Alt+Click` |
 | Add cursor above/below | `Cmd+Option+↑/↓` | `Ctrl+Alt+↑/↓` |
 | Select all occurrences | `Cmd+Shift+L` | `Ctrl+Shift+L` |
