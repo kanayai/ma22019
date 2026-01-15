@@ -27,25 +27,73 @@ VS Code is industry-standard and used by millions of developers. Learning it now
 2. Click the big download button (it auto-detects your operating system)
 3. Run the installer
 
-### Step 2: Install Essential Extensions
+### Step 2: Install Required Extensions
 
-Extensions add features to VS Code. Click the **Extensions** icon in the left sidebar (or press `Cmd+Shift+X` on Mac / `Ctrl+Shift+X` on Windows) and install these:
+Extensions add features to VS Code. **You must install these for the course.**
+
+#### How to Install Extensions
+
+1. Click the **Extensions** icon in the left sidebar (looks like 4 squares)
+   - Or press `Cmd+Shift+X` (Mac) / `Ctrl+Shift+X` (Windows)
+2. Search for the extension name
+3. Click **Install**
+
+#### Required Extensions for MA22019
+
+::: {.callout-important}
+## Install These First!
+You need all three of these extensions to complete coursework.
+:::
+
+| Extension | Search Term | What It Does |
+|-----------|-------------|--------------|
+| **Python** | `ms-python.python` | Python language support, debugging, IntelliSense |
+| **R** | `rstudioinc.r` | R language support, run R code |
+| **Quarto** | `quarto.quarto` | Quarto document support, preview |
+
+#### Step-by-Step: Installing the Python Extension
+
+1. Open Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+2. Type `Python` in the search bar
+3. Look for **"Python"** by Microsoft (it has millions of downloads)
+4. Click the blue **Install** button
+5. Wait for it to finish (you'll see a reload prompt)
+
+#### Step-by-Step: Installing the R Extension
+
+1. Open Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+2. Type `R` in the search bar
+3. Look for **"R"** by RStudio (previously Yuki Ueda)
+4. Click **Install**
+5. After installing, also install the R language server in R:
+   ```r
+   install.packages("languageserver")
+   ```
+
+#### Step-by-Step: Installing the Quarto Extension
+
+1. Open Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+2. Type `Quarto` in the search bar
+3. Look for **"Quarto"** by Quarto
+4. Click **Install**
+
+#### Optional (But Recommended) Extensions
 
 | Extension | Purpose |
 |-----------|---------|
-| **Python** | Python language support |
-| **Quarto** | Quarto document support |
-| **R** | R language support |
-| **Jupyter** | Jupyter notebook support |
-| **GitLens** | Enhanced Git features |
+| **Jupyter** | Work with Jupyter notebooks in VS Code |
+| **GitLens** | Enhanced Git history and blame annotations |
+| **Rainbow CSV** | Color-code CSV files for easier reading |
+| **indent-rainbow** | Visualize indentation levels |
 
-::: {.callout-note}
-## Quick Install
-You can also install extensions from the command line:
+::: {.callout-tip}
+## Command Line Install (Advanced)
+You can also install all required extensions at once from the terminal:
 ```bash
 code --install-extension ms-python.python
+code --install-extension rstudioinc.r
 code --install-extension quarto.quarto
-code --install-extension rdebugger.r-debugger
+code --install-extension ms-toolsai.jupyter
 ```
 :::
 
