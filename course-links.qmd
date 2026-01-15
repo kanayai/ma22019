@@ -1,0 +1,82 @@
+---
+title: "Useful Links"
+---
+
+## Course Resources
+
+- [Course Schedule](index.qmd)
+- [Syllabus](course-syllabus.qmd)
+- [GitHub Organization](https://github.com/ma22019) *(to be set up)*
+
+## R Resources
+
+### Essential
+- [R for Data Science (2e)](https://r4ds.hadley.nz/) - Main R textbook
+- [Posit Cloud](https://posit.cloud/) - Cloud-based RStudio
+- [RStudio Desktop](https://posit.co/download/rstudio-desktop/) - Local installation
+
+### Packages
+- [tidyverse](https://www.tidyverse.org/) - Data science toolkit
+- [ggplot2](https://ggplot2.tidyverse.org/) - Data visualization
+- [dplyr](https://dplyr.tidyverse.org/) - Data manipulation
+- [tidyr](https://tidyr.tidyverse.org/) - Data tidying
+
+### Reference
+- [RStudio Cheatsheets](https://posit.co/resources/cheatsheets/)
+- [R Documentation](https://www.rdocumentation.org/)
+- [R Graphics Cookbook](https://r-graphics.org/)
+
+## Python Resources
+
+### Essential
+- [Python for Data Analysis (3e)](https://wesmckinney.com/book/) - Main Python textbook
+- [Anaconda Distribution](https://www.anaconda.com/products/distribution) - Python + packages
+- [VS Code](https://code.visualstudio.com/) - Recommended editor
+
+### Packages
+- [pandas](https://pandas.pydata.org/) - Data manipulation
+- [NumPy](https://numpy.org/) - Numerical computing
+- [Matplotlib](https://matplotlib.org/) - Visualization
+- [seaborn](https://seaborn.pydata.org/) - Statistical visualization
+- [scikit-learn](https://scikit-learn.org/) - Machine learning
+
+### Reference
+- [Python Documentation](https://docs.python.org/3/)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Real Python Tutorials](https://realpython.com/)
+
+## Statistics Resources
+
+- [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
+- [Seeing Theory](https://seeing-theory.brown.edu/) - Visual probability and statistics
+- [StatQuest](https://statquest.org/) - Video explanations
+
+## Git and GitHub
+
+- [GitHub](https://github.com/)
+- [Git Documentation](https://git-scm.com/doc)
+- [Happy Git with R](https://happygitwithr.com/)
+- [GitHub Student Developer Pack](https://education.github.com/pack)
+
+## Quarto
+
+- [Quarto Website](https://quarto.org/)
+- [Quarto Guide](https://quarto.org/docs/guide/)
+- [Quarto vs R Markdown](https://quarto.org/docs/faq/rmarkdown.html)
+
+## University Resources
+
+- [University of Bath Library](https://library.bath.ac.uk/)
+- [Skills Centre](https://www.bath.ac.uk/guides/the-skills-centre/)
+- [IT Services](https://www.bath.ac.uk/professional-services/digital-data-and-technology/it-services/)
+
+## Additional Learning
+
+### Online Courses
+- [DataCamp](https://www.datacamp.com/)
+- [Coursera Data Science](https://www.coursera.org/browse/data-science)
+- [Kaggle Learn](https://www.kaggle.com/learn)
+
+### Practice
+- [Kaggle Competitions](https://www.kaggle.com/competitions)
+- [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday) - Weekly R data projects

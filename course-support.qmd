@@ -1,0 +1,126 @@
+---
+title: "Getting Help"
+---
+
+## Where to Get Help
+
+Getting stuck is a normal part of learning data science! Here are the resources available to you:
+
+### 1. Course Forum
+
+Post questions about course content, assignments, or technical issues. Your classmates and teaching team will respond.
+
+::: {.callout-tip}
+## Good Forum Etiquette
+- Search existing posts before creating a new one
+- Use descriptive titles
+- Include relevant code (formatted properly)
+- Describe what you've already tried
+:::
+
+### 2. Office Hours
+
+Drop in during office hours to get help from the teaching team.
+
+| Who | When | Where |
+|-----|------|-------|
+| Instructor | TBA | TBA |
+| TAs | TBA | TBA |
+
+### 3. Lab Sessions
+
+Labs are an excellent time to get help with hands-on coding questions.
+
+### 4. Problem Classes
+
+Problem classes are dedicated to working through exercises together.
+
+## R Help Resources
+
+### Documentation
+- Use `?function_name` in R to get help
+- Use `??search_term` to search documentation
+- [R Documentation](https://www.rdocumentation.org/)
+
+### Cheatsheets
+- [RStudio Cheatsheets](https://posit.co/resources/cheatsheets/)
+- Especially useful: dplyr, ggplot2, tidyr
+
+### Online Resources
+- [R for Data Science](https://r4ds.hadley.nz/)
+- [Stack Overflow - R tag](https://stackoverflow.com/questions/tagged/r)
+- [Posit Community](https://forum.posit.co/)
+
+## Python Help Resources
+
+### Documentation
+- Use `help(function_name)` or `function_name?` in Jupyter
+- [Python Documentation](https://docs.python.org/3/)
+
+### Cheatsheets
+- [Pandas Cheatsheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- [Matplotlib Cheatsheet](https://matplotlib.org/cheatsheets/)
+
+### Online Resources
+- [Python for Data Analysis](https://wesmckinney.com/book/)
+- [Stack Overflow - Python tag](https://stackoverflow.com/questions/tagged/python)
+- [Real Python](https://realpython.com/)
+
+## Git and GitHub Help
+
+### Quick Reference
+```bash
+# Clone a repository
+git clone <url>
+
+# Check status
+git status
+
+# Stage changes
+git add .
+
+# Commit changes
+git commit -m "Your message"
+
+# Push to GitHub
+git push
+```
+
+### Resources
+- [GitHub Guides](https://guides.github.com/)
+- [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Happy Git with R](https://happygitwithr.com/)
+
+## Computing Troubleshooting
+
+### Common Issues
+
+::: {.callout-warning}
+## Package Installation Fails
+Try:
+1. Restart R/Python session
+2. Update all packages
+3. Check for typos in package name
+4. Try a different CRAN mirror (R)
+:::
+
+::: {.callout-warning}
+## Git Push/Pull Errors
+Try:
+1. Pull first: `git pull`
+2. Check your internet connection
+3. Verify you have write access to the repository
+4. Ask for help with merge conflicts
+:::
+
+### Still Stuck?
+
+If your issue persists after trying the above:
+
+1. Post on the course forum with:
+   - Your code (or GitHub repository link)
+   - The exact error message
+   - What you've already tried
+   - Screenshots if helpful
+
+2. Come to office hours or lab sessions for in-person help

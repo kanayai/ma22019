@@ -1,0 +1,80 @@
+---
+title: "Course Overview"
+---
+
+## About This Course
+
+MA22019 is a second-year course that introduces students to the foundations of data science. Through a combination of lectures, hands-on labs, and problem-solving sessions, you will develop practical skills in data manipulation, visualization, statistical modeling, and machine learning.
+
+## Why Data Science?
+
+Data science combines statistics, programming, and domain knowledge to extract insights from data. It is one of the fastest-growing fields, with applications in:
+
+- Healthcare and medicine
+- Finance and economics
+- Social sciences
+- Environmental science
+- Business analytics
+- And many more...
+
+## What You'll Learn
+
+```{mermaid}
+flowchart LR
+    A[Data Collection] --> B[Data Wrangling]
+    B --> C[Exploration & Visualization]
+    C --> D[Statistical Modeling]
+    D --> E[Communication]
+    E --> F[Decision Making]
+    
+    style A fill:#EC0836,color:#fff
+    style B fill:#14C8E1,color:#000
+    style C fill:#673AB7,color:#fff
+    style D fill:#64FFDA,color:#000
+    style E fill:#FFEB3B,color:#000
+    style F fill:#202329,color:#fff
+```
+
+### Core Topics
+
+| Topic | R Tools | Python Tools |
+|-------|---------|--------------|
+| Data wrangling | dplyr, tidyr | pandas |
+| Visualization | ggplot2 | matplotlib, seaborn |
+| Statistical modeling | stats, broom | statsmodels, scipy |
+| Machine learning | tidymodels | scikit-learn |
+| Reproducibility | Quarto | Quarto, Jupyter |
+
+## Prerequisites
+
+This course assumes:
+
+- **Programming**: Basic familiarity with R or Python (covered in Year 1 modules)
+- **Mathematics**: Foundation in linear algebra and calculus
+- **Statistics**: Understanding of basic probability and descriptive statistics
+
+::: {.callout-tip}
+## Not sure if you're ready?
+Review the [R for Data Science Prerequisites](https://r4ds.hadley.nz/intro#prerequisites) or revisit your Year 1 programming notes.
+:::
+
+## Course Structure
+
+Each week follows a consistent pattern:
+
+| Session | Format | Purpose |
+|---------|--------|---------|
+| Lecture 1 | Interactive lecture | Introduce new concepts |
+| Lecture 2 | Interactive lecture | Deepen understanding with examples |
+| Lab | Hands-on coding | Practice with real datasets |
+| Problem Sheet | Independent work | Reinforce concepts through exercises |
+| Problem Class | Group session | Discuss solutions and get help |
+
+## Tools and Technology
+
+We use industry-standard tools throughout the course:
+
+- **Git & GitHub**: Version control and collaboration
+- **R & RStudio / VS Code**: Development environments
+- **Python & Jupyter**: Interactive computing
+- **Quarto**: Reproducible reports and presentations

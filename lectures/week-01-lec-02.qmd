@@ -1,0 +1,50 @@
+---
+title: "Week 1, Lecture 2: Getting Started with R and Python"
+---
+
+## Overview
+
+*This is a template lecture. Replace this content with your lecture materials.*
+
+## Learning Objectives
+
+By the end of this lecture, you will be able to:
+
+1. Set up your development environment
+2. Write basic R and Python code
+3. Understand data types and structures
+
+## Content
+
+### Setting Up Your Environment
+
+Content goes here...
+
+### R Basics
+
+```r
+# Example R code
+x <- c(1, 2, 3, 4, 5)
+mean(x)
+```
+
+### Python Basics
+
+```python
+# Example Python code
+x = [1, 2, 3, 4, 5]
+sum(x) / len(x)
+```
+
+## Summary
+
+Key takeaways from this lecture:
+
+- Point 1
+- Point 2
+- Point 3
+
+## Next Steps
+
+- Complete Lab 1
+- Start Problem Sheet 1

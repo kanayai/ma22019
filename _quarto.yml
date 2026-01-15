@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "MA22019"
+  description: "Homepage for MA22019 - Introduction to Data Science at University of Bath"
+  
+  page-navigation: true
+  
+  navbar:
+    background: "#202329"
+    foreground: "#FFFFFF"
+    logo: images/bath-logo.svg
+    left:
+      - text: "Schedule"
+        href: index.qmd
+      - text: "Syllabus"
+        href: course-syllabus.qmd
+      - text: "Overview"
+        href: course-overview.qmd
+      - text: "Team"
+        href: course-team.qmd
+      - text: "Support"
+        href: course-support.qmd
+      - text: "Links"
+        href: course-links.qmd
+    right:
+      - icon: github
+        href: https://github.com/ma22019
+        aria-label: GitHub
+
+  sidebar: false
+
+  page-footer:
+    background: "#202329"
+    left: |
+      &copy; University of Bath, Department of Mathematical Sciences
+    center: |
+      Made with [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+
+execute:
+  freeze: auto
+
+editor: source

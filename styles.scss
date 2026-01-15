@@ -1,0 +1,167 @@
+/*-- scss:defaults --*/
+
+// University of Bath Brand Colors
+$bath-granite: #202329;
+$bath-coral: #EC0836;
+$bath-cornflower: #14C8E1;
+$bath-steel: #C7C7C9;
+$bath-slate: #50565E;
+$bath-violet: #673AB7;
+$bath-mint: #64FFDA;
+$bath-citrus: #FFEB3B;
+
+// Primary theme colors
+$primary: $bath-coral;
+$secondary: $bath-granite;
+$link-color: $bath-coral;
+
+// Body
+$body-color: $bath-granite;
+$body-bg: #ffffff;
+
+// Navbar
+$navbar-bg: $bath-granite;
+$navbar-fg: #ffffff;
+
+// Code blocks
+$code-bg: #f8f9fa;
+$code-color: $bath-granite;
+
+/*-- scss:rules --*/
+
+// Links
+a {
+  color: $bath-coral;
+  text-decoration: none;
+  
+  &:hover {
+    color: darken($bath-coral, 10%);
+    text-decoration: underline;
+  }
+}
+
+// Navbar styling
+.navbar {
+  border-bottom: 3px solid $bath-coral;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+// Page title
+.title {
+  color: $bath-granite;
+  border-bottom: 3px solid $bath-coral;
+  padding-bottom: 0.5rem;
+}
+
+// Schedule table styling
+.schedule-table {
+  width: 100%;
+  
+  th {
+    background-color: $bath-granite;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  td {
+    padding: 0.75rem;
+    border-bottom: 1px solid $bath-steel;
+  }
+  
+  tr:hover {
+    background-color: rgba($bath-cornflower, 0.1);
+  }
+  
+  .week-header {
+    background-color: lighten($bath-granite, 70%);
+    font-weight: 600;
+  }
+}
+
+// Content boxes
+.callout {
+  border-left: 4px solid $bath-coral;
+}
+
+.callout-note {
+  border-left-color: $bath-cornflower;
+}
+
+.callout-warning {
+  border-left-color: $bath-citrus;
+}
+
+.callout-important {
+  border-left-color: $bath-coral;
+}
+
+// Team cards
+.team-card {
+  border: 1px solid $bath-steel;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    color: $bath-granite;
+    margin-bottom: 0.5rem;
+  }
+  
+  .role {
+    color: $bath-coral;
+    font-weight: 500;
+  }
+}
+
+// Resource links
+.resource-link {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem;
+  background-color: lighten($bath-granite, 75%);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background-color: lighten($bath-coral, 40%);
+  }
+}
+
+// Badge-style labels for content types
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  
+  &.lecture { background-color: lighten($bath-coral, 35%); color: darken($bath-coral, 15%); }
+  &.lab { background-color: lighten($bath-cornflower, 35%); color: darken($bath-cornflower, 25%); }
+  &.problem-sheet { background-color: lighten($bath-violet, 40%); color: darken($bath-violet, 10%); }
+  &.problem-class { background-color: lighten($bath-mint, 20%); color: darken($bath-mint, 40%); }
+}
+
+// Footer
+.page-footer {
+  border-top: 3px solid $bath-coral;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .schedule-table {
+    font-size: 0.85rem;
+    
+    td, th {
+      padding: 0.5rem;
+    }
+  }
+}

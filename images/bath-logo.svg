@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="50" fill="#202329"/>
+  <text x="10" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">
+    MA22019
+  </text>
+  <text x="95" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#C7C7C9">
+    Data Science
+  </text>
+</svg>

@@ -1,0 +1,49 @@
+---
+title: "Problem Sheet 1: Introduction"
+---
+
+## Overview
+
+*This is a template problem sheet. Replace this content with your exercises.*
+
+**Due:** *Date TBA*
+
+## Instructions
+
+1. Complete all exercises in this problem sheet
+2. Show your work and code where applicable
+3. Submit via GitHub before the deadline
+
+## Exercises
+
+### Exercise 1: R Basics (10 points)
+
+*Description of exercise*
+
+```r
+# Space for R solution
+
+```
+
+### Exercise 2: Python Basics (10 points)
+
+*Description of exercise*
+
+```python
+# Space for Python solution
+
+```
+
+### Exercise 3: Data Exploration (15 points)
+
+*Description of exercise*
+
+### Exercise 4: Visualization (15 points)
+
+*Description of exercise*
+
+## Submission Guidelines
+
+- Push your completed work to GitHub
+- Ensure your code runs without errors
+- Include comments explaining your approach

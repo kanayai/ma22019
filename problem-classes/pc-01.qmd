@@ -1,0 +1,54 @@
+---
+title: "Problem Class 1: Review and Discussion"
+---
+
+## Overview
+
+*This is a template problem class. Replace this content with your materials.*
+
+This session covers solutions and discussion for Problem Sheet 1.
+
+## Agenda
+
+1. Common questions and clarifications
+2. Solution walkthrough
+3. Tips and best practices
+4. Q&A
+
+## Solutions
+
+### Exercise 1: R Basics
+
+*Solution discussion*
+
+```r
+# Example solution
+
+```
+
+### Exercise 2: Python Basics
+
+*Solution discussion*
+
+```python
+# Example solution
+
+```
+
+### Exercise 3: Data Exploration
+
+*Solution discussion*
+
+### Exercise 4: Visualization
+
+*Solution discussion*
+
+## Common Mistakes
+
+- Mistake 1 and how to avoid it
+- Mistake 2 and how to avoid it
+
+## Tips for Next Week
+
+- Tip 1
+- Tip 2

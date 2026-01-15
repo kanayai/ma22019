@@ -1,0 +1,110 @@
+---
+title: "MA22019: Introduction to Data Science"
+toc: false
+---
+
+This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.
+
+::: {.callout-note}
+## Course Structure
+Each week includes **2 lectures**, **1 lab**, **1 problem sheet**, and **1 problem class**.
+:::
+
+```{=html}
+<table class="schedule-table">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Topic</th>
+      <th>Lecture 1</th>
+      <th>Lecture 2</th>
+      <th>Lab</th>
+      <th>Problem Sheet</th>
+      <th>Problem Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>Introduction to Data Science</td>
+      <td><a href="lectures/week-01-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-01-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-01.html">Lab 1</a></td>
+      <td><a href="problem-sheets/ps-01.html">PS 1</a></td>
+      <td><a href="problem-classes/pc-01.html">PC 1</a></td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Data Wrangling and Visualization</td>
+      <td><a href="lectures/week-02-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-02-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-02.html">Lab 2</a></td>
+      <td><a href="problem-sheets/ps-02.html">PS 2</a></td>
+      <td><a href="problem-classes/pc-02.html">PC 2</a></td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Exploratory Data Analysis</td>
+      <td><a href="lectures/week-03-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-03-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-03.html">Lab 3</a></td>
+      <td><a href="problem-sheets/ps-03.html">PS 3</a></td>
+      <td><a href="problem-classes/pc-03.html">PC 3</a></td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Data Types and Transformations</td>
+      <td><a href="lectures/week-04-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-04-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-04.html">Lab 4</a></td>
+      <td><a href="problem-sheets/ps-04.html">PS 4</a></td>
+      <td><a href="problem-classes/pc-04.html">PC 4</a></td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>Statistical Modeling I</td>
+      <td><a href="lectures/week-05-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-05-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-05.html">Lab 5</a></td>
+      <td><a href="problem-sheets/ps-05.html">PS 5</a></td>
+      <td><a href="problem-classes/pc-05.html">PC 5</a></td>
+    </tr>
+    <tr>
+      <td><strong>6</strong></td>
+      <td>Statistical Modeling II</td>
+      <td><a href="lectures/week-06-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-06-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-06.html">Lab 6</a></td>
+      <td><a href="problem-sheets/ps-06.html">PS 6</a></td>
+      <td><a href="problem-classes/pc-06.html">PC 6</a></td>
+    </tr>
+    <tr>
+      <td><strong>7</strong></td>
+      <td>Machine Learning Fundamentals</td>
+      <td><a href="lectures/week-07-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-07-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-07.html">Lab 7</a></td>
+      <td><a href="problem-sheets/ps-07.html">PS 7</a></td>
+      <td><a href="problem-classes/pc-07.html">PC 7</a></td>
+    </tr>
+    <tr>
+      <td><strong>8</strong></td>
+      <td>Classification and Prediction</td>
+      <td><a href="lectures/week-08-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-08-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-08.html">Lab 8</a></td>
+      <td><a href="problem-sheets/ps-08.html">PS 8</a></td>
+      <td><a href="problem-classes/pc-08.html">PC 8</a></td>
+    </tr>
+    <tr>
+      <td><strong>9</strong></td>
+      <td>Advanced Topics and Review</td>
+      <td><a href="lectures/week-09-lec-01.html">Lec 1</a></td>
+      <td><a href="lectures/week-09-lec-02.html">Lec 2</a></td>
+      <td><a href="labs/lab-09.html">Lab 9</a></td>
+      <td><a href="problem-sheets/ps-09.html">PS 9</a></td>
+      <td><a href="problem-classes/pc-09.html">PC 9</a></td>
+    </tr>
+  </tbody>
+</table>
+```

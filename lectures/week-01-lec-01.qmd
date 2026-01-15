@@ -1,0 +1,38 @@
+---
+title: "Week 1, Lecture 1: Introduction to Data Science"
+---
+
+## Overview
+
+*This is a template lecture. Replace this content with your lecture materials.*
+
+## Learning Objectives
+
+By the end of this lecture, you will be able to:
+
+1. Objective 1
+2. Objective 2
+3. Objective 3
+
+## Content
+
+### What is Data Science?
+
+Content goes here...
+
+### Why Learn Data Science?
+
+Content goes here...
+
+## Summary
+
+Key takeaways from this lecture:
+
+- Point 1
+- Point 2
+- Point 3
+
+## Next Steps
+
+- Complete the pre-reading for Lecture 2
+- Review the Week 1 problem sheet

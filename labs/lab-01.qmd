@@ -1,0 +1,70 @@
+---
+title: "Lab 1: Introduction to R and Python"
+execute:
+  eval: false
+---
+
+## Overview
+
+*This is a template lab. Replace this content with your lab materials.*
+
+In this lab, you will:
+
+1. Set up your computing environment
+2. Run your first R and Python code
+3. Create a simple data visualization
+
+## Prerequisites
+
+Make sure you have access to:
+
+- RStudio or Posit Cloud
+- Python with Jupyter or VS Code
+
+## Part 1: R Basics
+
+### Exercise 1.1
+
+Create a vector of numbers and calculate the mean.
+
+```r
+# Your code here
+
+```
+
+### Exercise 1.2
+
+Load the tidyverse and explore a built-in dataset.
+
+```r
+library(tidyverse)
+
+# Your code here
+
+```
+
+## Part 2: Python Basics
+
+### Exercise 2.1
+
+Create a list of numbers and calculate the mean.
+
+```python
+# Your code here
+
+```
+
+### Exercise 2.2
+
+Import pandas and explore a dataset.
+
+```python
+import pandas as pd
+
+# Your code here
+
+```
+
+## Submission
+
+Push your completed lab to your GitHub repository before the deadline.

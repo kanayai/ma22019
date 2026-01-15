@@ -1,0 +1,39 @@
+---
+title: "Teaching Team"
+---
+
+## Course Leader
+
+::: {.team-card}
+### Instructor Name
+**Role:** Course Leader
+
+📧 Email: [instructor@bath.ac.uk](mailto:instructor@bath.ac.uk)
+
+🏢 Office: Building, Room Number
+
+🕐 Office Hours: TBA
+:::
+
+## Teaching Assistants
+
+::: {.callout-note}
+Teaching assistant information will be added here.
+:::
+
+<!-- 
+Add teaching assistants using this template:
+
+::: {.team-card}
+### TA Name
+**Role:** Teaching Assistant
+
+📧 Email: [ta@bath.ac.uk](mailto:ta@bath.ac.uk)
+
+🕐 Lab Sessions: Day, Time
+:::
+-->
+
+## Support Staff
+
+Information about additional support staff will be added as needed.
